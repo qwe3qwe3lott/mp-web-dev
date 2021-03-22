@@ -1,0 +1,231 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+	animation-iteration-count: infinite;
+}
+
+body {
+	background-image: url("static/imgs/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.clock {
+ 	position: absolute;
+	border-radius: 50%;
+	background-color: white;
+	background-image: url("static/imgs/clock.png");
+	background-size: cover;
+}
+
+.arrow {
+	position: absolute;
+	left: 50%;
+	transform-origin: left;
+}
+
+.fix {
+	position: absolute;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.first-clock {
+	left: 100px;
+	top: 100px;
+	width: 200px;
+	height: 200px;
+	border: 10px solid saddlebrown;
+}
+
+.first-clock__h-arrow {
+	height: 6px;
+	width: 50px;
+	background-color: brown;
+	border-radius: 3px;
+	top: calc(50% - 3px);
+	animation: arrow 12s linear infinite;
+}
+
+.first-clock__m-arrow {
+	height: 6px;
+	width: 80px;
+	background-color: brown;
+	border-radius: 3px;
+	top: calc(50% - 3px);
+	animation: arrow 1s linear infinite;
+}
+
+.first-clock__fix {
+	width: 10px;
+	height: 10px;
+	top: calc(50% - 5px);
+	left: calc(50% - 5px);
+	background-color: saddlebrown;
+}
+
+.second-clock {
+	left: 1100px;
+	top: 130px;
+	width: 350px;
+	height: 350px;
+	border: 16px solid palevioletred;
+}
+
+.second-clock__h-arrow {
+	height: 10px;
+	width: 100px;
+	background-color: red;
+	border-radius: 5px;
+	top: calc(50% - 5px);
+	animation: arrow 24s linear infinite;
+}
+
+.second-clock__m-arrow {
+	height: 10px;
+	width: 150px;
+	background-color: red;
+	border-radius: 5px;
+	top: calc(50% - 5px);
+	animation: arrow 2s linear infinite;
+}
+
+
+.second-clock__fix {
+	width: 16px;
+	height: 16px;
+	top: calc(50% - 8px);
+	left: calc(50% - 8px);
+	background-color: palevioletred;
+}
+
+.third-clock {
+	left: 400px;
+	top: 70px;
+	width: 600px;
+	height: 600px;
+	border: 20px solid navy;
+}
+
+.third-clock__h-arrow {
+	height: 20px;
+	width: 150px;
+	background-color: blue;
+	border-radius: 10px;
+	top: calc(50% - 10px);
+	animation: arrow 48s linear infinite;
+}
+
+.third-clock__m-arrow {
+	height: 20px;
+	width: 270px;
+	background-color: blue;
+	border-radius: 10px;
+	top: calc(50% - 10px);
+	animation: arrow 4s linear infinite;
+}
+
+.third-clock__fix {
+	width: 26px;
+	height: 26px;
+	top: calc(50% - 13px);
+	left: calc(50% - 13px);
+	background-color: navy;
+}
+
+.snow {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	opacity: 0.8;
+	background-image: url("static/imgs/snow.png");
+	background-size: cover;
+	z-index: 1;
+	position: absolute;
+}
+
+.snow-1 {
+	left: 100px;
+	animation: snow-1-2-3 4s linear infinite;
+}
+
+.snow-2 {
+	left: 60px;
+	animation: snow-1-2-3 6s linear infinite;
+}
+
+.snow-3 {
+	left: 456px;
+	animation: snow-1-2-3 5s linear infinite;
+}
+
+.snow-4 {
+	left: 145px;
+	animation: snow-4-5-6 10s linear infinite;
+}
+
+.snow-5 {
+	left: 957px;
+	animation: snow-4-5-6 9s linear infinite;
+}
+
+.snow-6 {
+	left: 1122px;
+	animation: snow-4-5-6 8s linear infinite;
+}
+
+.snow-7 {
+	left: 1400px;
+	animation: snow-7-8-9 7s linear infinite;
+}
+
+.snow-8 {
+	left: 16540px;
+	animation: snow-7-8-9 9s linear infinite;
+}
+
+.snow-9 {
+	left: 1900px;
+	animation: snow-7-8-9 6s linear infinite;
+}
+
+@keyframes arrow{
+	0% {
+		transform: rotate(-90deg);
+	}
+
+	100% {
+		transform: rotate(270deg);
+	}	
+}
+
+@keyframes snow-1-2-3 {
+	0% {
+		top: -50px;
+	}
+
+	100% {
+		top: 95%;
+	}
+}
+
+@keyframes snow-4-5-6 {
+	0% {
+		top: -100px;
+	}
+
+	100% {
+		top: 95%;
+	}
+}
+
+@keyframes snow-7-8-9 {
+	0% {
+		top: -150px;
+	}
+
+	100% {
+		top: 95%;
+	}
+}

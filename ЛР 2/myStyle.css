@@ -1,0 +1,7 @@
+svg {
+    background-color: antiquewhite;
+}
+
+svg:hover circle {
+    fill: red;
+}

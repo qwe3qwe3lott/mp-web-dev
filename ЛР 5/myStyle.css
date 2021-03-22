@@ -1,0 +1,26 @@
+@media print {
+    @page {
+        margin: 1cm 3cm 1cm 1.5cm;
+    }
+
+    body {
+        font-size: 20px;
+    }
+
+    p {
+        page-break-inside: avoid;
+        text-align: justify;
+    }
+
+    p.center {
+        text-align: center;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .void {
+        page-break-after: always;
+    }
+}
