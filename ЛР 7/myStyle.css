@@ -110,3 +110,35 @@
     padding: 20px;
     background-color:crimson;
 }
+
+.seventh-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+      "f f f s s"
+      "t fo fo fo fo";
+}
+
+.seventh-grid__first-cell {
+    padding: 20px;
+    background-color:violet;
+    grid-area: f;
+}
+
+.seventh-grid__second-cell {
+    padding: 20px;
+    background-color:crimson;
+    grid-area: s;
+}
+
+.seventh-grid__third-cell {
+    padding: 20px;
+    background-color:blue;
+    grid-area: t;
+}
+
+.seventh-grid__fourth-cell {
+    padding: 20px;
+    background-color:firebrick;
+    grid-area: fo;
+}

@@ -23,4 +23,17 @@
     .void {
         page-break-after: always;
     }
+
+    .avoid {
+        page-break-after: avoid;
+    }
+}
+
+.jumbotron {
+    background-color: transparent !important;
+}
+
+
+* {
+    color: black !important;
 }
